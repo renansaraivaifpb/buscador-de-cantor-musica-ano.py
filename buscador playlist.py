@@ -48,3 +48,8 @@ while True:
     objeto = Buscador()
     digitado = input('Digite o que deseja procurar: ')
     objeto.populacionar_playlist(digitado)
+
+'''
+obs: Serve para instâncias musicais em playlist pequenas, é simples e traz bons resultados.Porém, caso ultrapasse um limite x, já não seria mais eficiente.
+Pois haveria uma série de iterações e verificações que levaria minutos ou até mais.
+'''
