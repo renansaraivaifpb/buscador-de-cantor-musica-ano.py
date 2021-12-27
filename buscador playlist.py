@@ -1,4 +1,5 @@
 while True:
+    #repetir o script
     class Musica():
         def __init__(self,titulo, compositor, cantor, ano):
             self.titulo = titulo
@@ -7,6 +8,7 @@ while True:
             self.ano = ano
     class Buscador():
         def procurar_playlist(self, playlist, procuracao):
+            ''' playlist(lista), procuracao(string) => incrimento da lista conforme o que se procura'''
             lista = []
             for instancia in range(len(playlist)):
                 # se colocar print(musica), aparecerá: 0, 1 , 2 -> pq são 3 instâncias na lista playlist
@@ -25,6 +27,7 @@ while True:
                 print(f"'{procuracao}' não resultou em nenhuma busca encontrada.")
 
         def populacionar_playlist(self,digitado):
+            ''' populacionar a lista playlist com instância da classe Musica '''
             playlist = [
                         Musica("Ponta de Areia", "Milton Nascimento", "Milton Nascimento", 1975),
                         Musica("Podres Poderes", "Caetano Veloso", "Caetano Veloso", "1984"),
